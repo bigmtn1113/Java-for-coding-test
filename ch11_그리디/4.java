@@ -22,25 +22,19 @@ public class Main {
 		
 		Arrays.sort(coin);
 		
-		int num = 0;
+		int maxNum = 1;	// 동전 화폐 단위 다 더한 값까지 답을 못 찾으면 그 다음 값이 최소값이므로 +1
 		for (int i = 0; i < n; ++i)
-			num += coin[i];
+			maxNum += coin[i];
 		
-		int minNum = ++num;
-		while (true) {
-			if (num <= 0) break;
+		int minNum = 0;
+		while (minNum <= maxNum) {
+			int checkNum = ++minNum;
 			
-			int temp = num;
-			for (int i = n - 1; i >= 0; --i) {
-				if (temp - coin[i] < 0) continue;
-				
-				temp -= coin[i];
-			}
+			for (int i = n - 1; i >= 0; --i)	// 화폐 단위가 큰 것부터 빼기
+				if (checkNum - coin[i] >= 0)
+					checkNum -= coin[i];
 			
-			if (temp > 0)	// 만들 수 없는 수
-				minNum = Math.min(minNum, num);	// 만들 수 없는 수 중 최소값
-			
-			--num;
+			if (checkNum > 0) break;	// 만들 수 없는 수를 발견하면 반복문 탈출
 		}
 		
 		bw.write(String.valueOf(minNum));
