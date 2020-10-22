@@ -9,7 +9,7 @@ class Solution {
 		ArrayList<String> result = new ArrayList<>();
 		
 		int minCnt = 1001;
-		for (int i = 0; i < s.length(); ++i) {
+		for (int i = 0; i < s.length() / 2 + 1; ++i) {
 			start += s.charAt(i);
 			check1 = start;
 			int cnt = 1;
