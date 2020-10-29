@@ -27,19 +27,11 @@ public class Main {
 		graph.get(1).add(new Node(0, 7));
 		graph.get(2).add(new Node(0, 5));
 		
-		for (int i = 0; i < 3; ++i) {
-			for (int j = 0; j < graph.get(i).size(); ++j)
-				graph.get(i).get(j).show();;
-			System.out.println();
-		}
-		
-		/*
 		for (ArrayList<Node> i : graph) {
 			for (Node j : i)
 				j.show();
 			System.out.println();
 		}
-		*/
 	}
 
 }
