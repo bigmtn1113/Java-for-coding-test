@@ -4,7 +4,7 @@
 ### CHAPTER 03 | 그리디
 - 이론
   - 당장 좋은 것만 선택하는 그리디
-  - 거스름돈 문제
+  - 거스름돈 문제: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch03_%EA%B7%B8%EB%A6%AC%EB%94%94/1.java)
 - 실전
   - 큰 수의 법칙
   - 숫자 카드 게임
