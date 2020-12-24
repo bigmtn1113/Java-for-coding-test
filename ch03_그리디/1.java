@@ -9,16 +9,16 @@ public class Main {
 		
 		int n = 1260;
 		int cnt = 0;
-        int[] coin = {500, 100, 50, 10};
+        	int[] coin = {500, 100, 50, 10};
 		
-        for (int i = 0; i < 4; i++) {
-            cnt += n / coin[i];
-            n %= coin[i];
-        }
+        	for (int i = 0; i < 4; i++) {
+            		cnt += n / coin[i];
+            		n %= coin[i];
+        	}
         
-        bw.write(String.valueOf(cnt));
-        bw.flush();
-        bw.close();
+		bw.write(String.valueOf(cnt));
+		bw.flush();
+		bw.close();
 	}
 
 }
