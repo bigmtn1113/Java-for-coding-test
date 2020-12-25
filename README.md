@@ -1,7 +1,7 @@
 # java-for-coding-test
 
 ## 💡 주요 알고리즘 이론과 실전 문제
-### CHAPTER 03 | 그리디
+### ⭐️ CHAPTER 03 | 그리디
 - 이론
   - 당장 좋은 것만 선택하는 그리디
   - 거스름돈 문제: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch03_%EA%B7%B8%EB%A6%AC%EB%94%94/1.java)
@@ -10,7 +10,7 @@
   - 숫자 카드 게임: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch03_%EA%B7%B8%EB%A6%AC%EB%94%94/3.java)
   - 1이 될 때까지: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch03_%EA%B7%B8%EB%A6%AC%EB%94%94/4.java)
 
-### CHAPTER 04 | 구현
+### ⭐️ CHAPTER 04 | 구현
 - 이론
   - 아이디어를 코드로 바꾸는 구현
   - 상하좌우: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch04_%EA%B5%AC%ED%98%84/1.java)
@@ -19,7 +19,7 @@
   - 왕실의 나이트: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch04_%EA%B5%AC%ED%98%84/3.java)
   - 게임 개발: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch04_%EA%B5%AC%ED%98%84/4.java)
   
-### CHAPTER 05 | DFS/BFS이론
+### ⭐️ CHAPTER 05 | DFS/BFS이론
 - 이론
   - 꼭 필요한 자료구조 기초
   - 탐색 알고리즘 DFS/BFS
@@ -36,7 +36,7 @@
   - 음료수 얼려 먹기: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch05_DFS%20BFS/10.java)
   - 미로 탈출: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch05_DFS%20BFS/11.java)
   
-### CHAPTER 06 | 정렬
+### ⭐️ CHAPTER 06 | 정렬
 - 이론
   - 기준에 따라서 데이터를 정렬
   - 선택 정렬: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch06_%EC%A0%95%EB%A0%AC/1.java)
@@ -52,7 +52,7 @@
   - 성적이 낮은 순서대로 학생 출력하기: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch06_%EC%A0%95%EB%A0%AC/11.java)
   - 두 배열의 원소 교체: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch06_%EC%A0%95%EB%A0%AC/12.java)
   
-### CHAPTER 07 | 이진 탐색
+### ⭐️ CHAPTER 07 | 이진 탐색
 - 이론
   - 범위를 반씩 좁혀가는 탐색
   - 순차 탐색: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch07_%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89/1.java)
@@ -66,7 +66,7 @@
     - 집합(Set) 자료형으로 해결: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch07_%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89/7.java)
   - 떡볶이 떡 만들기: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch07_%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89/8.java)
 
-### CHAPTER 08 | 다이나믹 프로그래밍
+### ⭐️ CHAPTER 08 | 다이나믹 프로그래밍
 - 이론
   - 비효율적인 피보나치 수열 구현: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/1.java)
   - 피보나치 수열 (Top-bottom): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/2.java)
@@ -79,7 +79,7 @@
   - 효율적인 화폐 구성: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/8.java)
 
 ## 💡 알고리즘 유형별 기출문제
-### CHAPTER 11 | 그리디 문제
+### ⭐️ CHAPTER 11 | 그리디 문제
 - 모험가 길드 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/1.java)
 - 곱하기 혹은 더하기 (Facebook 인터뷰 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/2.java)
 - 문자열 뒤집기 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/3.java)
@@ -87,7 +87,7 @@
 - 볼링공 고르기 (S 기관 입학 테스트): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/5.java)
 - 무지의 먹방 라이브 (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/6.java)
 
-### CHAPTER 12 | 구현 문제
+### ⭐️ CHAPTER 12 | 구현 문제
 - 럭키 스트레이트 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/1.java)
 - 문자열 재정렬 (Facebook 인터뷰 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/2.java)
 - 문자열 압축 (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/3.java)
