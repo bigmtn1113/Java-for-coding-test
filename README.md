@@ -78,6 +78,8 @@
   - 바닥 공사: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/7.java)
   - 효율적인 화폐 구성: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/8.java)
 
+<br/>
+
 ## 💡 알고리즘 유형별 기출문제
 ### ⭐️ CHAPTER 11 | 그리디 문제
 - 모험가 길드 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/1.java)
