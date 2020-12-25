@@ -78,3 +78,21 @@
   - 바닥 공사: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/7.java)
   - 효율적인 화폐 구성: [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch08_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/8.java)
 
+## 알고리즘 유형별 기출문제
+### CHAPTER 11 | 그리디 문제
+- 모험가 길드 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/1.java)
+- 곱하기 혹은 더하기 (Facebook 인터뷰 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/2.java)
+- 문자열 뒤집기 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/3.java)
+- 만들 수 없는 금액 (K 대회 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/4.java)
+- 볼링공 고르기 (S 기관 입학 테스트): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/5.java)
+- 무지의 먹방 라이브 (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/6.java)
+
+### CHAPTER 12 | 구현 문제
+- 럭키 스트레이트 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/1.java)
+- 문자열 재정렬 (Facebook 인터뷰 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/2.java)
+- 문자열 압축 (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/3.java)
+- 자물쇠와 열쇠 (카카오)
+- 뱀 (삼성): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/5.java)
+- 기둥과 보 설치 (카카오)
+- 치킨 배달 (삼성)
+- 외벽 점검 (카카오)
