@@ -1,52 +1,26 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int n = Integer.parseInt(st.nextToken());
-		int m = Integer.parseInt(st.nextToken());
-		int k = Integer.parseInt(st.nextToken());
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		int k = sc.nextInt();
 		
-		int[] arr = new int[n];
-		st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < n; ++i)
-			arr[i] = Integer.parseInt(st.nextToken());
+		int[] arr = new int[1001];
 		
-		br.close();
-		
-		Arrays.sort(arr);
-
-		int firstMaxNum = arr[n - 1];
-		int secondMaxNum = arr[n - 2];
-		int sum = 0;
-		
-		while (true) {
-			for (int i = 0; i < k; ++i) {
-				if (m == 0) break;
-				
-				sum += firstMaxNum;
-				--m;
-			}
-			
-			if (m == 0) break;
-			
-			sum += secondMaxNum;
-			--m;
+		for (int i = 0; i < n; ++i) {
+			arr[i] = sc.nextInt();
 		}
+		sc.close();
 		
-		bw.write(String.valueOf(sum));
-		bw.flush();
-		bw.close();
+		Arrays.sort(arr, 0, n);
+		
+		int sum = 0;
+		sum += ((arr[n - 1] * k) + arr[n - 2]) * (m / (k + 1)) + (arr[n - 1] * (m % (k + 1)));
+		
+		System.out.print(sum);
 	}
-	
 }
