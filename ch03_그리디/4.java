@@ -1,34 +1,27 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int n = Integer.parseInt(st.nextToken());
-		int k = Integer.parseInt(st.nextToken());
-		br.close();
+		int n = sc.nextInt();
+		int k = sc.nextInt();
+		sc.close();
 		
 		int cnt = 0;
-		while (true) {
-			if (n == 1) break;
-			
-			if (n % k == 0) n /= k;
-			else --n;
+		
+		while (n > 1) {
+			if (n % k == 0) {
+				n /= k;
+			} else {
+				--n;
+			}
 			
 			++cnt;
 		}
 		
-		bw.write(String.valueOf(cnt));
-		bw.flush();
-		bw.close();
+		System.out.print(cnt);
 	}
 
 }
