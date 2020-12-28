@@ -5,23 +5,25 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		String position = sc.next();
+		String location = sc.next();
 		sc.close();
 		
-		int x = position.charAt(0) - 'a' + 1;
-		int y = position.charAt(1) - '0';
-		int[][] directions = {{-2, -1}, {-2, 1}, {-1, -2}, {1, -2}, {-1, 2}, {1, 2}, {2, -1}, {2, 1}};
+		int x = location.charAt(0) - 'a' + 1;
+		int y = location.charAt(1) - '0';
+		int[][] directions = {{-2, -1}, {-2, 1}, {-1, -2}, {1, -2}, 
+					{2, -1}, {2, 1}, {-1, 2}, {1, 2}};
 		
 		int cnt = 0;
-		for (int[] next : directions) {
-			int nextX = 1;
-			int nextY = 1;
+		
+		for (int[] direction : directions) {
+			int nextX = x + direction[0];
+			int nextY = y + direction[1];
 			
-			nextX = x + next[0];
-			nextY = y + next[1];
+			if (nextX < 1 || nextY < 1 || nextX > 8 || nextY > 8) {
+				continue;
+			}
 			
-			if (nextX >= 1 && nextY >= 1 && nextX <= 8 && nextY <= 8)
-				++cnt;
+			++cnt;
 		}
 		
 		System.out.print(cnt);
