@@ -11,23 +11,27 @@ public class Main {
 		
 		int x = 1;
 		int y = 1;
-		char[] movements = { 'U', 'L', 'R', 'D' };
-		int[][] directions = {{-1, 0}, {0, -1}, {0, 1}, {1, 0}};
+		char[] moveTypes = {'L', 'R', 'U', 'D'};
+		int[][] directions = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
 		
 		for (String plan : plans) {
-			char nextMovement = plan.charAt(0);
-			int nextX = 1;
-			int nextY = 1;
+			int nextX = x;
+			int nextY = y;
+			char moveType = plan.charAt(0);
 			
-			for (int j = 0; j < 4; ++j) {
-				if (nextMovement != movements[j]) continue;
+			for (int i = 0; i < 4; ++i) {
+				if (moveType != moveTypes[i]) {
+					continue;
+				}
 				
-				nextX = x + directions[j][0];
-				nextY = y + directions[j][1];
+				nextX += directions[i][0];
+				nextY += directions[i][1];
 				break;
 			}
 			
-			if (nextX < 1 || nextY < 1 || nextX > n || nextY > n) continue;
+			if (nextX < 1 || nextY < 1 || nextX > n || nextY > n) {
+				continue;
+			}
 			
 			x = nextX;
 			y = nextY;
