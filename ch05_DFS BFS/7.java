@@ -19,8 +19,9 @@ public class Main {
 	public static void main(String[] args) {
 		ArrayList<ArrayList<Node>> graph = new ArrayList<ArrayList<Node>>();
 		
-		for (int i = 0; i < 3; ++i)
+		for (int i = 0; i < 3; ++i) {
 			graph.add(new ArrayList<Node>());
+		}
 		
 		graph.get(0).add(new Node(1, 7));
 		graph.get(0).add(new Node(2, 5));
@@ -28,8 +29,10 @@ public class Main {
 		graph.get(2).add(new Node(0, 5));
 		
 		for (ArrayList<Node> i : graph) {
-			for (Node j : i)
+			for (Node j : i) {
 				j.show();
+			}
+			
 			System.out.println();
 		}
 	}
