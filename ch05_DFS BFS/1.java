@@ -14,8 +14,9 @@ public class Main {
 		stack.push(4);
 		stack.pop();
 		
-		while (!stack.empty())
+		while (!stack.empty()) {
 			System.out.println(stack.pop());
+		}
 	}
 
 }
