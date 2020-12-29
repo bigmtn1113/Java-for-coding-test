@@ -15,8 +15,9 @@ public class Main {
 		queue.offer(4);
 		queue.poll();
 		
-		while(!queue.isEmpty())
+		while(!queue.isEmpty()) {
 			System.out.println(queue.poll());
+		}
 	}
 
 }
