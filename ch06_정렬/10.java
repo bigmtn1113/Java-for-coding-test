@@ -8,16 +8,19 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		Integer[] arr = new Integer[n];
 		
-		for (int i = 0; i < n; ++i)
-			arr[i] = sc.nextInt();
+		Integer[] array = new Integer[n];
+		
+		for (int i = 0; i < n; ++i) {
+			array[i] = sc.nextInt();
+		}
 		sc.close();
 		
-		Arrays.sort(arr, Collections.reverseOrder());
+		Arrays.sort(array, Collections.reverseOrder());
 		
-		for (int i : arr)
-			System.out.print(i + " ");
+		for (int num : array) {
+			System.out.print(num + " ");
+		}
 	}
 
 }
