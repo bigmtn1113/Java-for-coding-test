@@ -6,17 +6,20 @@ public class Main {
 		for (int i = 0; i < array.length; ++i) {
 			int minIndex = i;
 			
-			for (int j = i + 1; j < array.length; ++j)
-				if (array[j] < array[minIndex])
+			for (int j = i + 1; j < array.length; ++j) {
+				if (array[minIndex] > array[j]) {
 					minIndex = j;
+				}
+			}
 			
 			int temp = array[i];
 			array[i] = array[minIndex];
 			array[minIndex] = temp;
 		}
 		
-		for (int i : array)
-			System.out.print(i + " ");
+		for (int num : array) {
+			System.out.print(num + " ");
+		}
 	}
 
 }
