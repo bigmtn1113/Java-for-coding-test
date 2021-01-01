@@ -87,7 +87,7 @@
 - [문자열 뒤집기](https://www.acmicpc.net/problem/1439) (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/3.java)
 - 만들 수 없는 금액 (K 대회 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/4.java)
 - 볼링공 고르기 (S 기관 입학 테스트): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/5.java)
-- 무지의 먹방 라이브 (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/6.java)
+- [무지의 먹방 라이브](https://programmers.co.kr/learn/courses/30/lessons/42891) (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch11_%EA%B7%B8%EB%A6%AC%EB%94%94/6.java)
 
 ### ⭐️ CHAPTER 12 | 구현 문제
 - 럭키 스트레이트 (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/1.java)
