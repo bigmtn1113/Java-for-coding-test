@@ -1,43 +1,49 @@
 import java.util.Scanner;
 
 public class Main {
+	public static int[] riceCakes;
 	
-	public static int n, m;
-	public static int[] riceCake = new int[1000000];
-	
-	public static int parametricSearch(int begin, int end) {
-		int mid;
+	public static int parametricSearch(int begin, int end, int target) {
 		int result = -1;
-		long sum;
 		
 		while (begin <= end) {
-			mid = (begin + end) / 2;
-			sum = 0;
+			int mid = (begin + end) / 2;
+			long sum = 0;
 			
-			for (int i = 0; i < n; ++i)
-				if (riceCake[i] > mid)
-					sum += riceCake[i] - mid;
+			for (int riceCake : riceCakes) {
+				if (riceCake > mid) {
+					sum += riceCake - mid;
+				}
+			}
 			
-			if (sum >= m) { result = mid; begin = mid + 1; }
-			else end =  mid - 1;
+			if (sum >= target) {
+				result = mid;
+				begin = mid + 1;
+			} else {
+				end = mid - 1;
+			}
 		}
+		
 		return result;
 	}
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		n = sc.nextInt();
-		m = sc.nextInt();
+		int n = sc.nextInt();
+		int m = sc.nextInt();
 		
+		riceCakes = new int[n];
 		int max = 0;
+		
 		for (int i = 0; i < n; ++i) {
-			riceCake[i] = sc.nextInt();
-			max = Math.max(max, riceCake[i]);
+			riceCakes[i] = sc.nextInt();
+			
+			max = Math.max(max, riceCakes[i]);
 		}
 		sc.close();
 		
-		System.out.print(parametricSearch(0, max));
+		System.out.print(parametricSearch(0, max, m));
 	}
 
 }
