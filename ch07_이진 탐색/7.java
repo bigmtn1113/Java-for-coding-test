@@ -7,14 +7,17 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		HashSet<Integer> s = new HashSet<>();
+		HashSet<Integer> set = new HashSet<>();
 		
-		for (int i = 0; i < n; ++i)
-			s.add(sc.nextInt());
+		for (int i = 0; i < n; ++i) {
+			set.add(sc.nextInt());
+		}
 		
 		int m = sc.nextInt();
-		for (int i = 0; i < m; ++i)
-			System.out.print(s.contains(sc.nextInt()) == false ? "no " : "yes "); 
+		
+		for (int i = 0; i < m; ++i) {
+			System.out.print((set.contains(sc.nextInt()) == true) ? "yes " : "no ");
+		}
 		sc.close();
 	}
 
