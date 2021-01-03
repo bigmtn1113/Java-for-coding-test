@@ -6,14 +6,17 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		int data[] = new int[1000001];
+		int[] array = new int[1000001];
 		
-		for (int i = 0; i < n; ++i)
-			++data[sc.nextInt()];
+		for (int i = 0; i < n; ++i) {
+			++array[sc.nextInt()];
+		}
 		
 		int m = sc.nextInt();
-		for (int i = 0; i < m; ++i)
-			System.out.print(data[sc.nextInt()] == 0 ? "no " : "yes "); 
+		
+		for (int i = 0; i < m; ++i) {
+			System.out.print((array[sc.nextInt()] > 0) ? "yes " : "no ");
+		}
 		sc.close();
 	}
 
