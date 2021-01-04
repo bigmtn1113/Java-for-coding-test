@@ -93,7 +93,7 @@
 - [럭키 스트레이트](https://www.acmicpc.net/problem/18406) (핵심 유형): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/1.java)
 - 문자열 재정렬 (Facebook 인터뷰 기출): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/2.java)
 - [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/3.java)
-- 자물쇠와 열쇠 (카카오)
+- [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) (카카오): [[Java Code]](https://github.com/kva231/Java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/4.java)
 - 뱀 (삼성): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/5.java)
 - 기둥과 보 설치 (카카오)
 - 치킨 배달 (삼성)
