@@ -7,23 +7,32 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		String n = sc.next();
+		String s = sc.next();
 		sc.close();
 		
-		ArrayList<Character> arr = new ArrayList<>();
+		int sLength = s.length();
 		int sum = 0;
-		for (int i = 0; i < n.length(); ++i) {
-			char c = n.charAt(i);
+		ArrayList<Character> list = new ArrayList<>();
+		
+		for (int i = 0; i < sLength; ++i) {
+			char c = s.charAt(i);
 			
-			if (Character.isAlphabetic(c)) arr.add(c);
-			else sum += c - '0';
+			if (Character.isAlphabetic(c)) {
+				list.add(c);
+			} else {
+				sum += c - '0';
+			}
 		}
 		
-		Collections.sort(arr);
-		for(int i = 0; i < arr.size(); ++i)
-			System.out.print(arr.get(i));
+		Collections.sort(list);
 		
-		if (sum != 0) System.out.print(sum);
+		for (char c : list) {
+			System.out.print(c);
+		}
+		
+		if (sum > 0) {
+			System.out.print(sum);
+		}
 	}
 
 }
