@@ -9,23 +9,30 @@ public class Main {
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		
-		int[] money = new int[n];
-		for (int i = 0; i < n; ++i)
-			money[i] = sc.nextInt();
+		int[] moneyTypes = new int[n];
+		
+		for (int i = 0; i < n; ++i) {
+			moneyTypes[i] = sc.nextInt();
+		}
 		sc.close();
 		
-		int dp[] = new int[m + 1];
+		Arrays.sort(moneyTypes);
+		
+		int[] dp = new int[m + 1];
+		
 		Arrays.fill(dp, 1, m + 1, 10001);
 		
-		for (int i = money[0]; i <= m; ++i) {
-			for (int j : money) {
-				if (i < j) break;
+		for (int i = moneyTypes[0]; i <= m; ++i) {
+			for (int moneyType : moneyTypes) {
+				if (i < moneyType) {
+					break;
+				}
 				
-				dp[i] = Math.min(dp[i], dp[i - j] + 1);
+				dp[i] = Math.min(dp[i], dp[i - moneyType] + 1);
 			}
 		}
 		
-		System.out.print(dp[m] != 10001 ? dp[m] : -1);
+		System.out.print((dp[m] != 10001) ? dp[m] : -1);
 	}
 
 }
