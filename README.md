@@ -95,6 +95,6 @@
 - [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) (카카오): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/3.java)
 - [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) (카카오): [[Java Code]](https://github.com/kva231/Java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/4.java)
 - [뱀](https://www.acmicpc.net/problem/3190) (삼성): [[Java Code]](https://github.com/kva231/java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/5.java)
-- 기둥과 보 설치 (카카오)
+- [기둥과 보 설치](https://programmers.co.kr/learn/courses/30/lessons/60061#) (카카오): [[Java Code]](https://github.com/kva231/Java-for-coding-test/blob/main/ch12_%EA%B5%AC%ED%98%84/6.java)
 - 치킨 배달 (삼성)
 - 외벽 점검 (카카오)
