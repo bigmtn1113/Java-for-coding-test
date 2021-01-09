@@ -1,39 +1,31 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int n = Integer.parseInt(st.nextToken());
-		int m = Integer.parseInt(st.nextToken());
+		int n = sc.nextInt();
+		int m = sc.nextInt();
 		
-		int[] ballWeight = new int[n];
-		int[] ballCnt = new int[n];
+		int[] balls = new int[n];
+		int[] ballCounts = new int[m + 1];
 		
-		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < n; ++i) {
-			ballWeight[i] = Integer.parseInt(st.nextToken());
-			++ballCnt[ballWeight[i]];
+			balls[i] = sc.nextInt();
+			
+			++ballCounts[balls[i]];
 		}
-		br.close();
+		sc.close();
 		
-		int cnt = 0;
+		int count = 0;
+		
 		for (int i = 1; i <= m; ++i) {
-			n -= ballCnt[i];	// 공 개수 - 무게가 i인 볼링공 개수 = A의 경우의 수
-			cnt += ballCnt[i] * n;	// 무게가 i인 볼링공 개수 * 공 개수 = B의 경우의 수
+			n -= ballCounts[i];
+			count += n * ballCounts[i];
 		}
 		
-		bw.write(String.valueOf(cnt));
-		bw.flush();
-		bw.close();
+		System.out.print(count);
 	}
 
 }
