@@ -1,45 +1,46 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		int n = Integer.parseInt(br.readLine());
-		int[] coin = new int[n];
+		int n = sc.nextInt();
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < n; ++i)
-			coin[i] = Integer.parseInt(st.nextToken());
-		br.close();
+		Integer[] moneyTypes = new Integer[n];
 		
-		Arrays.sort(coin);
+		for (int i = 0; i < n; ++i) {
+			moneyTypes[i] = sc.nextInt();
+		}
+		sc.close();
 		
-		int maxNum = 1;	// 동전 화폐 단위 다 더한 값까지 답을 못 찾으면 그 다음 값이 최소값이므로 +1
-		for (int i = 0; i < n; ++i)
-			maxNum += coin[i];
+		Arrays.sort(moneyTypes, Collections.reverseOrder());
 		
-		int minNum = 0;
-		while (minNum <= maxNum) {
-			int checkNum = ++minNum;
+		int min = moneyTypes[n - 1];
+		
+		while (true) {
+			int temp = min;
 			
-			for (int i = n - 1; i >= 0; --i)	// 화폐 단위가 큰 것부터 빼기
-				if (checkNum - coin[i] >= 0)
-					checkNum -= coin[i];
+			for (int moneyType : moneyTypes) {
+				if (temp >= moneyType) {
+					temp -= moneyType;
+				}
+				
+				if (temp == 0) {
+					break;
+				}
+			}
 			
-			if (checkNum > 0) break;	// 만들 수 없는 수를 발견하면 반복문 탈출
+			if (temp > 0) {
+				break;
+			}
+			
+			++min;
 		}
 		
-		bw.write(String.valueOf(minNum));
-		bw.flush();
-		bw.close();
+		System.out.print(min);
 	}
 
 }
