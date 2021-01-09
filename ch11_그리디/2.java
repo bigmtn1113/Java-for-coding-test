@@ -1,28 +1,23 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		String s = br.readLine();
-		br.close();
+		String s = sc.next();
+		sc.close();
 		
-		int sum = s.charAt(0) - '0';
-		for (int i = 1; i < s.length(); ++i) {
-			int num = s.charAt(i) - '0';
+		int sLength = s.length();
+		long sum = s.charAt(0) - '0';
+		
+		for (int i = 1; i < sLength; ++i) {
+			int charToInt = s.charAt(i) - '0';
 			
-			sum = Math.max(sum + num, sum * num);
+			sum = Math.max(sum + charToInt, sum * charToInt);
 		}
 		
-		bw.write(String.valueOf(sum));
-		bw.flush();
-		bw.close();
+		System.out.print(sum);
 	}
 
 }
