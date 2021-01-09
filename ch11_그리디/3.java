@@ -1,42 +1,34 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		String s = br.readLine();
-		br.close();
+		String s = sc.next();
+		sc.close();
 		
-		int oneCnt = 0;
-		int zeroCnt = 0;
+		int zeroCount = 0;
+		int oneCount = 0;
+		int sLength = s.length();
 		
-		for (int i = 0; i < s.length(); ++i) {
-			int j = 0;
+		for (int i = 0; i < sLength; ) {
+			char c = s.charAt(i);
 			
-			if (s.charAt(i) == '0') {	// 뒤집어야 할 0의 개수 파악
-				for (j = i + 1; j < s.length(); ++j)
-					if (s.charAt(j) == '1') break;
-				
-				++zeroCnt;
-			} else if (s.charAt(i) == '1') {	// 뒤집어야 할 1의 개수 파악
-				for (j = i + 1; j < s.length(); ++j)
-					if (s.charAt(j) == '0') break;
-				
-				++oneCnt;
+			if (c == '0') {
+				++zeroCount;
+			} else if (c == '1') {
+				++oneCount;
 			}
 			
-			i = j - 1;
+			++i;
+			
+			while ((i < sLength) && (c == s.charAt(i))) {
+				++i;
+			}
 		}
 		
-		bw.write(String.valueOf(Math.min(zeroCnt, oneCnt)));
-		bw.flush();
-		bw.close();
+		System.out.print(Math.min(zeroCount, oneCount));
 	}
 
 }
